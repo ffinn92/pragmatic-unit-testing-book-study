@@ -16,6 +16,6 @@ public class ScoreCollectionTest {
         int actualResult = collection.arithmeticMeae();
 
         // then
-        assertThat(actualResult).isEqualTo(6);
+        assertThat(actualResult).isEqualTo(42);
     }
 }
