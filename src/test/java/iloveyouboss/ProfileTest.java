@@ -2,12 +2,12 @@ package iloveyouboss;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.*;
 
 class ProfileTest {
 
     @Test
-    public void test() {
+    public void matchAnswersFalseWhenMustMatchCriteriaNotMet() {
         Profile profile = new Profile("Bull Hockey, Inc.");
         Question question = new BooleanQuestion(1, "Got Bonuses?");
         Answer profileAnswer = new Answer(question, Bool.FALSE);
@@ -17,5 +17,9 @@ class ProfileTest {
         Criterion criterion = new Criterion(criteriaAnswer, Weight.MustMatch);
 
         criteria.add(criterion);
+
+        boolean matches = profile.matches(criteria);
+
+        assertThat(matches).isFalse();
     }
 }
