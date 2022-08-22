@@ -1,7 +1,6 @@
-package iloveyouboss;
+package iloveyouboss.domain;
 
 public class Answer {
-
     private int i;
     private Question question;
 

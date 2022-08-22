@@ -1,5 +1,6 @@
-package iloveyouboss;
+package iloveyouboss.domain;
 
+import iloveyouboss.domain.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,14 +14,14 @@ class ProfileTest {
     @BeforeEach
     public void create() {
         profile = new Profile("Bull Hockey, Inc.");
-        question = new BooleanQuestion(1, "Got bonuses?");
+//        question = new BooleanQuestion(1, "Got bonuses?");
         criteria = new Criteria();
     }
 
     @Test
     public void matches() {
         Profile profile = new Profile("Bull Hockey, Inc.");
-        Question question = new BooleanQuestion(1, "Got milk?");
+//        Question question = new BooleanQuestion(1, "Got milk?");
 
         // must-match 항목이 맞지 않으면 false
         profile.add(new Answer(question, Bool.FALSE));

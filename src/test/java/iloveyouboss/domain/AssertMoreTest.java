@@ -1,4 +1,4 @@
-package scratch;
+package iloveyouboss.domain;
 
 import org.junit.jupiter.api.*;
 
