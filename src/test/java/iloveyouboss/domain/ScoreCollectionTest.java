@@ -1,7 +1,8 @@
-package iloveyouboss;
+package iloveyouboss.domain;
 
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.*;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ScoreCollectionTest {
 
@@ -16,6 +17,6 @@ public class ScoreCollectionTest {
         int actualResult = collection.arithmeticMeae();
 
         // then
-        assertThat(actualResult).isEqualTo(42);
+        assertThat(actualResult).isEqualTo(6);
     }
 }
